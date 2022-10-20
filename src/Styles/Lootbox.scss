@@ -1,0 +1,122 @@
+$widthLootboxSlider: 60vw;
+
+.lootbox {
+    // background-color: red;
+    width: 100vw;
+    height: 35vh;
+    margin-top: 32px;
+
+    .lootbox-overflow {
+        width: $widthLootboxSlider;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+
+        .lootbox-overflow-slider {
+            width: 2000%;
+            height: 100%;
+            left: 0;
+            // background: #423E3D;
+            position: absolute;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 6px;
+
+            .items {
+                width: 1%;
+                height: 90%;
+                background: radial-gradient(49.84% 54.25% at 49.84% 45.75%, #737373 0%, #898987 100%);
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                flex-direction: column;
+                color: white;
+                .items-img{
+                    height: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 80%;
+                    }
+                }
+                
+                .items-title {
+                    width: 100%;
+                    height: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    // background: rgb(74,58,77);
+                    background: radial-gradient(circle, rgb(108, 37, 121) 0%, rgba(111,50,119,1) 100%);
+                }
+            }
+            
+        }
+    }
+}
+
+.is-active {
+    animation: backButtonsAnime_In 8s cubic-bezier(0.32, 0.13, 0.18, 1.07) forwards;
+}
+// animation: backButtonsAnime_In 0.4s ease forwards;
+@keyframes backButtonsAnime_In {
+    100% {
+        transform: translateX(calc(-60% + $widthLootboxSlider));
+    }
+}
+
+@keyframes backButtonsAnime_out {
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+
+// /* Group 9 */
+
+// position: absolute;
+// width: 309px;
+// height: 341px;
+
+
+
+// /* Rectangle 32 */
+
+// position: absolute;
+// width: 309px;
+// height: 341px;
+
+// background: radial-gradient(49.84% 54.25% at 49.84% 45.75%, #737373 0%, #898987 100%);
+
+
+// /* Rectangle 31 */
+
+// box-sizing: border-box;
+
+// position: absolute;
+// width: 309px;
+// height: 70px;
+
+// background: linear-gradient(273.16deg, #FCAA36 0%, #FF9800 100%);
+// border-top: 1px solid #FFC777;
+
+
+// /* Karambit Fade */
+
+// position: absolute;
+// width: 67px;
+// height: 42px;
+
+// font-family: 'Inter';
+// font-style: normal;
+// font-weight: 700;
+// font-size: 15px;
+// line-height: 139.02%;
+// /* or 21px */
+
+// color: #FFFFFF;
+
